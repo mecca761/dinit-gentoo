@@ -1,0 +1,8 @@
+type = process
+command = /usr/bin/agetty tty2 linux-c
+restart = true
+termsignal = HUP
+smooth-recovery = true
+inittab-id = 2
+inittab-line = tty2
+depends-on: loginready

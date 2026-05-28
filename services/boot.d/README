@@ -1,0 +1,10 @@
+# boot.d - services started at boot via symlinks
+# Create these symlinks after copying services to /etc/dinit.d/:
+#
+# ln -s ../late-filesystems /etc/dinit.d/boot.d/late-filesystems
+# ln -s ../modules /etc/dinit.d/boot.d/modules
+#
+# sshd is optional - only add if you want SSH at boot:
+# ln -s ../sshd /etc/dinit.d/boot.d/sshd
+#
+# Do NOT add dhcpcd here if you use wifi (wpa_supplicant/iwd instead)

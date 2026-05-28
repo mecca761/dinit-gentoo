@@ -1,0 +1,7 @@
+# udevd service for Gentoo (uses systemd-udevd, not eudev)
+type = scripted
+command = /usr/lib/systemd/systemd-udevd --daemon
+stop-command = /usr/bin/udevadm control -e
+log-type = buffer
+restart = false
+depends-on: early-filesystems

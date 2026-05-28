@@ -1,0 +1,6 @@
+type = process
+command = /usr/lib/elogind/elogind
+restart = true
+smooth-recovery = true
+depends-on: udevd
+depends-on: dbusd
